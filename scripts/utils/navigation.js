@@ -2,7 +2,7 @@ const loadPage = async url => {
 	try {
 		const response = await fetch(url)
 
-		if (!response.ok) throw new Error(`Ошибка загрузки страницы: ${response.statusText}`)
+		if (!response.ok) throw new Error(`Failed to load page: ${response.statusText}`)
 
 		const html = await response.text()
 
@@ -14,13 +14,13 @@ const loadPage = async url => {
 
 		history.pushState(null, null, url)
 
-		updateActiveLink(url)
+		updateActiveLink()
 	} catch (error) {
-		console.error('Ошибка при загрузке страницы:', error)
+		console.error('Error loading page:', error)
 	}
 }
 
-const updateActiveLink = url => {
+const updateActiveLink = () => {
 	document.querySelectorAll('.header__menu-link').forEach(link => {
 		link.classList.toggle('header__menu-link_active', link.href === window.location.href)
 	})

@@ -1,0 +1,29 @@
+.web__content {
+	display: grid;
+	gap: 1.5rem;
+}
+
+.web__box {
+	border: 1px solid var(--border);
+	border-radius: 14px;
+	padding: 14px;
+	background-color: var(--gradient);
+	box-shadow: 0 0 15px var(--accent);
+
+	display: flex;
+	justify-content: center;
+	align-items: start;
+	gap: 1.25rem;
+}
+
+.web__img {
+	width: 100%;
+	max-width: 650px;
+	height: 450px;
+	object-fit: cover;
+	border-radius: 14px;
+}
+
+.web__text {
+   text-shadow: 0  0 15px var(--accent);
+}
