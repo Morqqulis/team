@@ -5,6 +5,7 @@
 /* ------------Modules------------- */
 @import './modules/theme.css';
 @import './modules/burger.css';
+@import './modules/animate.css';
 
 /* -------------Common------------- */
 @import './common/header.css';
@@ -12,6 +13,7 @@
 
 /* --------------Pages------------------ */
 
+@import './pages/home.css';
 @import './pages/team-members.css';
 @import './pages/hoc.css';
 @import './pages/code-artits.css';

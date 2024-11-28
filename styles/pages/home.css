@@ -1,0 +1,114 @@
+.team {
+}
+
+.team__content {
+	background-color: var(--default);
+	border: 2px solid var(--border);
+	border-radius: 14px;
+}
+.team__title {
+	margin-bottom: 25px;
+	font-weight: 700;
+	font-size: 56px;
+	text-align: center;
+	text-transform: capitalize;
+	@media (max-width: 991.98px) {
+		font-size: 40px;
+	}
+
+	@media (max-width: 566.98px) {
+		font-size: 32px;
+	}
+}
+.team__description {
+	border-radius: 14px;
+	padding: 2rem;
+	color: var(--foreground);
+}
+/* ------------------- */
+.profiles {
+	padding-top: 0;
+}
+
+.profiles__content {
+	background-color: var(--default);
+	border: 2px solid var(--border);
+	border-radius: 14px;
+	padding-block: 20px;
+}
+.profiles__title {
+	margin-bottom: 44px;
+	font-weight: 700;
+	font-size: 44px;
+	text-align: center;
+	@media (max-width: 767.98px) {
+		font-size: 36px;
+	}
+	@media (max-width: 566.98px) {
+		font-size: 28px;
+	}
+}
+.profiles__items {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	justify-content: center;
+	justify-items: center;
+	gap: 1rem;
+	margin-bottom: 20px;
+}
+.profiles__item {
+	display: grid;
+	justify-items: center;
+	gap: 10px;
+	color: var(--accent);
+
+	&:hover {
+		color: var(--success);
+	}
+	&:hover .profiles__image {
+		scale: 1.125;
+	}
+}
+.profiles__image {
+	transition: scale 0.5s ease 0s;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+}
+.profiles__name {
+	transition: color 0.5s ease 0s;
+}
+
+.profile__follow {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	justify-self: center;
+	gap: 10px;
+	transition: 0.3s ease 0s;
+	transition-property: scale, color, background-color;
+	margin-top: 50px;
+	border: 1px solid var(--border);
+	border-radius: 14px;
+
+	padding: 10px 24px;
+	color: var(--foreground);
+
+	svg {
+		width: 26px;
+		height: 26px;
+	}
+
+	&:hover {
+		scale: 1.125;
+		background-color: var(--success);
+		color: var(--background);
+	}
+
+	&:active {
+		scale: 0.95;
+		background-color: var(--danger);
+		color: var(--foreground);
+	}
+}

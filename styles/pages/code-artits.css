@@ -1,15 +1,1 @@
-.showcase {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
-}
 
-.project {
-   width: 30%;
-   margin-bottom: 20px;
-   text-align: center;
-}
-
-.project img {
-   width: 100%;
-}

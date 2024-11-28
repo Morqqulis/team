@@ -47,10 +47,12 @@ body,
 	height: 100%;
 }
 section {
-	padding-block: 5.625rem;
+	&:not(:last-child) {
+		padding-block: 3rem;
+	}
 
-	@media (max-width: 19.1995rem) {
-		padding-block: 2.8125rem;
+	@media (max-width: 24.799500000000002rem) {
+		padding-block: 1.5rem;
 	}
 }
 
@@ -83,7 +85,9 @@ body {
 	color: var(--foreground);
 	line-height: 1.45;
 	font-family: 'Monaco', sans-serif;
-
+	&.menu-opened {
+		overflow: hidden;
+	}
 	&.loaded {
 		opacity: 1;
 	}

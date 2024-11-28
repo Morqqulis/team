@@ -1,0 +1,49 @@
+@keyframes rainbow {
+	0% {
+		border-color: red;
+	}
+	14.3% {
+		border-color: orange;
+	}
+	28.6% {
+		border-color: yellow;
+	}
+	42.9% {
+		border-color: green;
+	}
+	57.2% {
+		border-color: blue;
+	}
+	71.5% {
+		border-color: indigo;
+	}
+	85.8% {
+		border-color: violet;
+	}
+	100% {
+		border-color: transparent;
+	}
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	40% {
+		transform: rotate(90deg);
+	}
+	50% {
+		transform: rotate(90deg);
+	}
+	80% {
+		transform: rotate(0deg);
+	}
+}
+
+.block {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	animation: spin infinite ease-in-out, rainbow infinite linear;
+	border: 1px solid transparent;
+}

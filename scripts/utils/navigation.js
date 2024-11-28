@@ -1,3 +1,5 @@
+import { clearRainbowAnimation, createRainbowAnimation } from './animation.js'
+
 const loadPage = async url => {
 	try {
 		const response = await fetch(url)
@@ -15,6 +17,15 @@ const loadPage = async url => {
 		history.pushState(null, null, url)
 
 		updateActiveLink()
+
+		clearRainbowAnimation()
+		if (url.includes('code-artist')) {
+			createRainbowAnimation({
+				resolution: 20,
+				boxSize: 600,
+				speed: 4,
+			})
+		}
 	} catch (error) {
 		console.error('Error loading page:', error)
 	}
