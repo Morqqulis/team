@@ -66,40 +66,41 @@
 
          <section class="web">
             <div class="web__container">
+               <h1 class="web__title">Navigation</h1>
                <div class="web__content">
                   <div class="web__box">
                      <img class="web__img" src="./assets/images/web/1.png" alt="">
-                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla cumque accusantium voluptate, voluptatum, deleniti praesentium ullam quis dolores necessitatibus velit
-                        consequuntur
-                        provident quos dicta asperiores sapiente tempore sequi doloremque iure, non modi? Eos exercitationem neque expedita vero, ipsum ullam dignissimos dolores assumenda ea ipsa
-                        soluta
-                        eveniet minima rerum suscipit delectus asperiores facilis voluptatem in minus labore adipisci sed officiis provident voluptatibus. Magnam facilis architecto, libero labore
-                        molestiae,
-                        quis iusto obcaecati illo ratione sit laboriosam cumque nihil, praesentium et eum. Beatae asperiores id quidem. Quos natus fuga et voluptas tenetur saepe repellat adipisci a
-                        nostrum,
-                        eveniet sunt nobis praesentium at tempora est neque unde molestias exercitationem commodi dolore! Numquam voluptas quasi delectus? Quam, harum tenetur consectetur nam nesciunt
-                        fugit
-                        ea quae sequi sint dolore sapiente delectus corporis? Voluptas iste id corrupti minima, perferendis inventore magni possimus odit tempora blanditiis soluta beatae voluptatibus
-                        dignissimos quibusdam molestiae, saepe at. Aperiam laboriosam omnis iure inventore cumque minus eius exercitationem odit vero unde numquam temporibus necessitatibus magnam,
-                        earum
-                        quod. Dolore numquam sit ab, a similique inventore nobis voluptas ipsum praesentium deleniti </p>
+                     <div class="web__text">
+                        <p>This code dynamically loads HTML content from a specified URL and updates the page's main section.</p>
+                        <h3 class="web__subtitle">Here's how it works:</h3>
+                        <p>Content Fetching: Sends an HTTP request to the given URL and retrieves the HTML response.</p>
+                        <h3 class="web__subtitle">Page Content Update:</h3>
+                        <p>
+                           Extracts the
+                           section of the loaded HTML and replaces the content of the element with id="app" on the current page.
+                        </p>
+                        <h3 class="web__subtitle">URL Update:</h3>
+                        <p>Uses the browser's history.pushState to update the URL in the address bar without reloading the page, enabling seamless navigation.
+                           Active Link Highlighting: Calls a function to visually update the active link based on the current URL.</p>
+                        <h3 class="web__subtitle">Error Handling:</h3>
+                        <p>
+                           Catches and logs any errors during the process, such as failed requests or invalid responses.
+                           This technique is a fundamental part of Single-page applications (SPA), enabling smooth navigation and content updates without full-page reloads.</p>
+                     </div>
                   </div>
                   <div class="web__box">
                      <img class="web__img" src="./assets/images/web/2.png" alt="">
-                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla cumque accusantium voluptate, voluptatum, deleniti praesentium ullam quis dolores necessitatibus velit
-                        consequuntur
-                        provident quos dicta asperiores sapiente tempore sequi doloremque iure, non modi? Eos exercitationem neque expedita vero, ipsum ullam dignissimos dolores assumenda ea ipsa
-                        soluta
-                        eveniet minima rerum suscipit delectus asperiores facilis voluptatem in minus labore adipisci sed officiis provident voluptatibus. Magnam facilis architecto, libero labore
-                        molestiae,
-                        quis iusto obcaecati illo ratione sit laboriosam cumque nihil, praesentium et eum. Beatae asperiores id quidem. Quos natus fuga et voluptas tenetur saepe repellat adipisci a
-                        nostrum,
-                        eveniet sunt nobis praesentium at tempora est neque unde molestias exercitationem commodi dolore! Numquam voluptas quasi delectus? Quam, harum tenetur consectetur nam nesciunt
-                        fugit
-                        ea quae sequi sint dolore sapiente delectus corporis? Voluptas iste id corrupti minima, perferendis inventore magni possimus odit tempora blanditiis soluta beatae voluptatibus
-                        dignissimos quibusdam molestiae, saepe at. Aperiam laboriosam omnis iure inventore cumque minus eius exercitationem odit vero unde numquam temporibus necessitatibus magnam,
-                        earum
-                        quod. Dolore numquam sit ab, a similique inventore nobis voluptas ipsum praesentium deleniti </p>
+                     <div class="web__text">
+                        <p>This code manages navigation in a single-page application (SPA) by dynamically loading content and updating the active link:</p>
+                        <p>updateActiveLink: Highlights the navigation link that matches the current URL by toggling the header__menu-link_active class.</p>
+                        <h3 class="web__subtitle">setupNavigation:</h3>
+                        <p>
+                           Listens for link clicks, prevents default behavior for internal links, and dynamically loads the content using loadPage.
+                           Handles browser back/forward navigation with the popstate event, loading the correct content for the current path.
+                        </p>
+                        <p>Loads the initial page content on setup.</p>
+                        <p>This ensures smooth navigation, URL updates, and active link highlighting without full-page reloads.</p>
+                     </div>
                   </div>
                </div>
             </div>
