@@ -1,0 +1,125 @@
+header {
+	/* position: fixed; */
+	transform: translateY(-100%);
+	transition: transform 0.5s ease 0.3s;
+	border-bottom: 0.0625rem solid var(--border);
+	padding-block: 0.625rem;
+	width: 100%;
+
+	.loaded & {
+		transform: translateY(0);
+	}
+}
+.header__logo {
+	height: 70px;
+}
+.header__logo-img {
+	width: 100%;
+	max-width: 100px;
+	height: auto;
+}
+
+.header__content {
+	transition: 0.4s ease-in 0s;
+	transition-property: background-color, border-color, color;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 0.625rem;
+	border: 1px solid var(--border);
+	border-radius: 0.75rem;
+	background-color: var(--default);
+	padding: 0.9375rem;
+}
+
+.header__nav {
+	@media (max-width: 991.98px) {
+		position: absolute;
+		top: 125px;
+		right: -100%;
+		transition: right 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) 0s;
+		border-radius: 14px;
+		background-color: var(--foreground);
+		width: 100%;
+		max-width: 50%;
+		color: var(--background);
+		.menu-opened & {
+			right: 15px;
+		}
+	}
+	@media (max-width: 566.98px) {
+		max-width: calc(100% - 30px);
+	}
+}
+.header__menu {
+	display: flex;
+	align-items: center;
+	gap: 0.9375rem;
+	@media (max-width: 991.98px) {
+		flex-direction: column;
+		padding: 40px;
+		height: 60dvh;
+		overflow-y: auto;
+	}
+}
+.header__menu-item {
+	width: 100%;
+}
+.header__menu-link {
+	display: block;
+	position: relative;
+	transition: color 0.5s ease 0s;
+	padding-bottom: 0.5rem;
+	padding-inline: 0.5rem;
+	font-weight: 500;
+	white-space: nowrap;
+
+	&::before {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		transition: all 0.5s ease 0s;
+		border-radius: 24px;
+		background-color: var(--accent);
+		width: 0;
+		height: 2px;
+		content: '';
+	}
+
+	&:hover {
+		color: var(--accent);
+		&::before {
+			width: 100%;
+		}
+	}
+
+	@media (max-width: 991.98px) {
+		font-size: 1.5rem;
+		text-align: center;
+	}
+}
+
+.header__menu-link_active {
+	pointer-events: none;
+	color: var(--success);
+
+	&::before {
+		background-color: var(--success);
+		width: 100%;
+	}
+}
+
+[data-theme='light'] .header__menu-link_active {
+	color: var(--danger);
+
+	&::before {
+		background-color: var(--danger);
+	}
+}
+
+.header__actions {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}

@@ -1,0 +1,39 @@
+.theme {
+	display: flex;
+	position: relative;
+	transition: all 0.5s ease 0s;
+	box-shadow: 0rem 0rem 0.9375rem var(--secondary);
+	border: 0.125rem solid var(--default);
+	border-radius: 1.25rem;
+	background-color: var(--foreground);
+	width: 4.375rem;
+	padding-inline: 0.3125rem;
+	height: 2.125rem;
+
+	&:hover {
+		border-color: var(--accent);
+		background-color: var(--accent);
+	}
+}
+
+.theme__icon-wrapper {
+	transition: transform 0.5s ease 0s;
+}
+
+[data-theme='dark'] .theme__icon-wrapper {
+	transform: translate(110%, 0rem) rotate(360deg);
+}
+
+.theme__icon {
+	transform: translate(0rem, 0.025rem);
+
+	transition-property: opacity, transform, width, height;
+	transition: 0.5s ease 0s;
+	width: 1.75rem;
+	height: 1.75rem;
+	color: var(--warning);
+}
+
+[data-theme='dark'] .theme__icon {
+	color: var(--danger);
+}

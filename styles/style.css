@@ -1,0 +1,17 @@
+/* -------------Utils-------------- */
+@import './utils/vars.css';
+@import './utils/reset.css';
+
+/* ------------Modules------------- */
+@import './modules/theme.css';
+@import './modules/burger.css';
+
+/* -------------Common------------- */
+@import './common/header.css';
+@import './common/footer.css';
+
+/* --------------Pages------------------ */
+
+@import './pages/team-members.css';
+@import './pages/hoc.css';
+@import './pages/code-artits.css';

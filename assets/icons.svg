@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+
+   <symbol id="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round" stroke-linejoin="round">
+      <title>moon</title>
+      <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+   </symbol>
+
+
+   <symbol id="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="4" />
+      <path d="M12 3v1" />
+      <path d="M12 20v1" />
+      <path d="M3 12h1" />
+      <path d="M20 12h1" />
+      <path d="m18.364 5.636-.707.707" />
+      <path d="m6.343 17.657-.707.707" />
+      <path d="m5.636 5.636.707.707" />
+      <path d="m17.657 17.657.707.707" />
+   </symbol>
+
+   <symbol id="menu-icon" viewBox="0 0 100 100" height="100" width="100">
+      <path class="line line1"
+         d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+      <path class="line line2" d="M 20,50 H 80" />
+      <path class="line line3"
+         d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+
+   </symbol>
+
+</svg>

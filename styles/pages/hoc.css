@@ -1,0 +1,39 @@
+.hoc {
+}
+.hoc__container {
+	display: flex;
+	flex-direction: column;
+	gap: 1.25rem;
+}
+
+.hoc__title {
+	font-size: 56px;
+	padding-left: 50px;
+	font-weight: 700;
+}
+.hoc__content {
+	display: flex;
+	flex-direction: column;
+	gap: 0.875rem;
+}
+
+.hoc__block {
+	border-radius: 14px;
+	padding: 20px;
+	border: 1px solid var(--border);
+	width: fit-content;
+	box-shadow: 0 0 25px var(--foreground);
+}
+
+.hoc__subtitle {
+	margin-left: 56px;
+	font-size: 32px;
+	font-weight: 700;
+}
+.hoc__text {
+	font-size: 20px;
+}
+
+.hoc__link {
+	color: var(--accent);
+}
