@@ -39,7 +39,7 @@
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 1.25rem;
-	box-shadow: 0 0 0.3rem var(--accent);
+	box-shadow: 0 0 0.7rem var(--warning);
 	border: 0.025rem solid var(--border);
 	border-radius: 0.35rem;
 	background-color: var(--gradient);
