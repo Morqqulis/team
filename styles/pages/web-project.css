@@ -1,9 +1,6 @@
 .web {
 }
 .web__container {
-	border-radius: 0.35rem;
-	background-color: var(--default);
-	padding-block: 1rem;
 }
 
 .web__title {
@@ -24,11 +21,16 @@
 	color: var(--warning);
 	font-weight: 600;
 	font-size: 1.1rem;
+	[data-theme='light'] & {
+		color: var(--accent);
+	}
 }
 
 .web__content {
 	display: grid;
-	/* padding-inline: 1rem; */
+	border-radius: 0.875rem;
+	background-color: var(--default);
+	padding: 2.5rem;
 	gap: 1.5rem;
 }
 
@@ -71,4 +73,8 @@
 	gap: 0.3rem;
 	padding: 0.625rem;
 	text-shadow: 0 0 0.5rem var(--warning);
+
+	[data-theme='light'] & {
+		text-shadow: 0 0 0.5rem var(--accent);
+	}
 }
