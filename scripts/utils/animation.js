@@ -20,9 +20,7 @@ function createRainbowAnimation({ resolution = 20, boxSize = 400, speed = 4 } = 
 	}
 }
 
-function clearRainbowAnimation() {
-	const blocks = document.querySelectorAll('.block')
-	blocks.forEach(block => block.remove())
-}
+const clearRainbowAnimation = () => document.querySelectorAll('.block').forEach(block => block.remove())
 
 export { clearRainbowAnimation, createRainbowAnimation }
+
