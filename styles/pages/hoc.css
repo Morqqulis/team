@@ -1,63 +1,61 @@
 .hoc {
-	border-radius: 14px;
+	display: grid;
+	place-items: center;
+	height: 100%;
 }
 .hoc__container {
-	display: flex;
-	flex-direction: column;
-	gap: 1.25rem;
-	background-color: var(--default);
-	border-radius: 14px;
-	padding-block: 40px;
 }
 
 .hoc__title {
-	font-size: 56px;
-	padding-left: 50px;
+	margin-bottom: 1.5rem;
+	padding-left: 3.125rem;
 	font-weight: 700;
+	font-size: 3.5rem;
 	text-align: center;
-	margin-bottom: 24px;
-	@media (max-width: 991.98px) {
-		font-size: 40px;
+	@media (max-width: 61.99875rem) {
+		font-size: 2.5rem;
 	}
 
-	@media (max-width: 566.98px) {
-		font-size: 32px;
+	@media (max-width: 35.43625rem) {
+		font-size: 2rem;
 	}
 }
 .hoc__content {
-	padding-inline: 40px;
 	display: flex;
 	flex-direction: column;
 	gap: 0.875rem;
+	border-radius: 0.875rem;
+	background-color: var(--default);
+	padding: 2.5rem;
 }
 
 .hoc__block {
-	border-radius: 14px;
-	padding: 20px;
-	border: 1px solid var(--border);
-	width: fit-content;
-	box-shadow: 0 0 25px var(--foreground);
 	display: grid;
-	gap: 10px;
+	gap: 0.625rem;
+	box-shadow: 0 0 1.5625rem var(--foreground);
+	border: 0.0625rem solid var(--border);
+	border-radius: 0.875rem;
+	padding: 1.25rem;
+	width: fit-content;
 }
 
 .hoc__subtitle {
-	padding-left: 56px;
-	padding-bottom: 14px;
+	border-bottom: 0.0625rem solid var(--border);
+	padding-bottom: 0.875rem;
+	padding-left: 3.5rem;
 	width: fit-content;
-	font-size: 32px;
-	font-weight: 700;
 	color: var(--warning);
-	border-bottom: 1px solid var(--border);
-	@media (max-width: 767.98px) {
-		font-size: 24px;
+	font-weight: 700;
+	font-size: 2rem;
+	@media (max-width: 47.99875rem) {
+		font-size: 1.5rem;
 	}
-	@media (max-width: 479.98px) {
-		font-size: 22px;
+	@media (max-width: 29.99875rem) {
+		font-size: 1.375rem;
 	}
 }
 .hoc__text {
-	font-size: 20px;
+	font-size: 1.25rem;
 }
 
 .hoc__link {

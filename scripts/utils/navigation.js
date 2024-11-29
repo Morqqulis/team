@@ -1,4 +1,5 @@
 import { clearRainbowAnimation, createRainbowAnimation } from './animation.js'
+import { dom } from './constants.js'
 
 const loadPage = async url => {
 	try {
@@ -10,15 +11,15 @@ const loadPage = async url => {
 
 		const tempDiv = document.createElement('div')
 		tempDiv.innerHTML = html
-		const newPageContent = tempDiv.querySelector('main').innerHTML
 
-		document.querySelector('#app').innerHTML = newPageContent
+		dom.main.innerHTML = tempDiv.querySelector('main').innerHTML
 
 		history.pushState(null, null, url)
 
 		updateActiveLink()
 
 		clearRainbowAnimation()
+
 		if (url.includes('code-artist')) {
 			createRainbowAnimation({
 				resolution: 20,
@@ -26,13 +27,13 @@ const loadPage = async url => {
 				speed: 4,
 			})
 		}
-	} catch (error) {
-		console.error('Error loading page:', error)
+	} catch (err) {
+		console.error('Error loading page:', err)
 	}
 }
 
 const updateActiveLink = () => {
-	document.querySelectorAll('.header__menu-link').forEach(link => {
+	dom.headerLinks.forEach(link => {
 		link.classList.toggle('header__menu-link_active', link.href === window.location.href)
 	})
 }

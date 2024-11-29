@@ -6,8 +6,8 @@
 	border: 0.125rem solid var(--default);
 	border-radius: 1.25rem;
 	background-color: var(--foreground);
-	width: 4.375rem;
 	padding-inline: 0.3125rem;
+	width: 4.375rem;
 	height: 2.125rem;
 
 	&:hover {
@@ -26,9 +26,9 @@
 
 .theme__icon {
 	transform: translate(0rem, 0.025rem);
+	transition: 0.5s ease 0s;
 
 	transition-property: opacity, transform, width, height;
-	transition: 0.5s ease 0s;
 	width: 1.75rem;
 	height: 1.75rem;
 	color: var(--warning);

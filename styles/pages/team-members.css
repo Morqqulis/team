@@ -1,7 +1,11 @@
 .hero {
+	display: grid;
+	place-items: center;
+	height: 100%;
 }
 
 .hero__container {
+	width: 100%;
 }
 .hero__content {
 	display: grid;
@@ -17,7 +21,7 @@
 	display: grid;
 	font-size: 4.5rem;
 	text-align: center;
-	text-transform: uppercase;
+	text-transform: capitalize;
 	span {
 		font-size: 2.75rem;
 	}
@@ -38,8 +42,8 @@
 }
 
 .hero__text {
-	text-align: center;
 	font-size: 1.5rem;
+	text-align: center;
 	@media (max-width: 47.9988rem) {
 		font-size: 1.125rem;
 	}
@@ -81,7 +85,7 @@
 		transform: rotate(-45deg);
 		transition: 0.7s all;
 		box-shadow: 0 0 2.5rem 1rem var(--foreground);
-		height: 960px;
+		height: 24rem;
 		content: '';
 	}
 	&:hover {
@@ -122,19 +126,18 @@
 }
 
 .hero__card-title {
+	display: grid;
+	grid-area: 0.2rem;
 	border-bottom: 0.0625rem solid var(--border);
 	padding-bottom: 0.625rem;
 	width: 100%;
+	color: var(--warning);
 	font-size: 1.25rem;
 	text-align: center;
-	display: grid;
-	grid-area: 0.2rem;
 	text-transform: capitalize;
-	color: var(--warning);
 }
 .hero__card-image {
 	margin-bottom: 0.625rem;
-	margin-block: auto;
 	border-radius: 0.75rem;
 	width: 100%;
 	max-width: 100%;

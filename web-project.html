@@ -63,8 +63,6 @@
       </header>
 
       <main id="app">
-
-
          <section class="web">
             <div class="web__container">
                <h1 class="web__title">Navigation</h1>
@@ -82,8 +80,13 @@
                            section of the loaded HTML and replaces the content of the element with id="app" on the current page.
                         </p>
                         <h3 class="web__subtitle">URL Update:</h3>
-                        <p>Uses the browser's history.pushState to update the URL in the address bar without reloading the page, enabling seamless navigation.
-                           Active Link Highlighting: Calls a function to visually update the active link based on the current URL.</p>
+                        <p>
+                           Uses the browser's history.pushState to update the URL in the address bar without reloading the page, enabling seamless navigation.
+                        </p>
+                        <h3>Active Link Highlighting:</h3>
+                        <p>
+                           Calls a function to visually update the active link based on the current URL.
+                        </p>
                         <h3 class="web__subtitle">Error Handling:</h3>
                         <p>
                            Catches and logs any errors during the process, such as failed requests or invalid responses.
@@ -93,8 +96,8 @@
                   <div class="web__box">
                      <img class="web__img" src="./assets/images/web/2.png" alt="">
                      <div class="web__text">
-                        <p>This code manages navigation in a single-page application (SPA) by dynamically loading content and updating the active link:</p>
-                        <p>updateActiveLink: Highlights the navigation link that matches the current URL by toggling the header__menu-link_active class.</p>
+                        <p>This code manages navigation in a single-page application (SPA) by dynamically loading content and updating the active link:<code>updateActiveLink</code> </p>
+                        <p> Highlights the navigation link that matches the current URL by toggling the header__menu-link_active class.</p>
                         <h3 class="web__subtitle">setupNavigation:</h3>
                         <p>
                            Listens for link clicks, prevents default behavior for internal links, and dynamically loads the content using loadPage.
@@ -107,8 +110,6 @@
                </div>
             </div>
          </section>
-
-
       </main>
 
       <footer class="footer">
