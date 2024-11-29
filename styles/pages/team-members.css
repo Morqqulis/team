@@ -95,6 +95,11 @@
 		filter: brightness(1.2);
 		box-shadow: 0 0.175rem 1.25rem 0.25rem var(--foreground);
 		border: 0.025rem solid var(--border);
+		[data-theme='light'] & {
+			filter: brightness(1.1);
+			background-color: var(--background);
+		}
+
 		&::before {
 			top: -100%;
 			left: 200%;
@@ -123,12 +128,12 @@
 
 .hero__card-title {
 	display: grid;
-	grid-area: 0.2rem;
 	border-bottom: 0.0625rem solid var(--border);
 	padding-bottom: 0.625rem;
 	width: 100%;
-	min-height: 4.0625rem;
-	color: var(--warning);
+	min-height: 4.1875rem;
+	color: var(--danger);
+	font-weight: 500;
 	font-size: 1.25rem;
 	text-align: center;
 	text-transform: capitalize;
@@ -141,6 +146,10 @@
 	height: 15.625rem;
 	max-height: 25rem;
 	object-fit: cover;
+}
+
+.hero__card-link {
+	display: block;
 }
 .hero__card-text {
 }

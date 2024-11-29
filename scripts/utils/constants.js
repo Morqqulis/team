@@ -10,10 +10,6 @@ export const dom = {
 		icon: document.querySelector('.theme__use'),
 		logo: document.querySelector('.header__logo-img'),
 	},
-
-	animation: {
-		container: document.querySelector('.spiral'),
-	},
 }
 
 export const paths = {

@@ -1,5 +1,6 @@
 function createRainbowAnimation({ resolution = 20, boxSize = 400, speed = 4 } = {}) {
 	const container = document.querySelector('.spiral')
+	if (!container) return
 
 	for (let i = 1; i <= resolution; i++) {
 		const block = document.createElement('div')
@@ -15,7 +16,7 @@ function createRainbowAnimation({ resolution = 20, boxSize = 400, speed = 4 } = 
 		block.style.animationDuration = `${speed}s`
 		block.style.animationDelay = `${delay}s`
 
-		if (container) container.appendChild(block)
+		container.appendChild(block)
 	}
 }
 

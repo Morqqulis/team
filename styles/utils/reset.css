@@ -40,6 +40,9 @@ h6 {
 	font-weight: inherit;
 	font-size: inherit;
 }
+strong {
+	color: var(--warning);
+}
 
 html,
 body,
@@ -63,7 +66,7 @@ section {
 	min-height: 100%;
 	overflow-x: clip;
 	min-width: 0;
-   
+
 	> main {
 		flex: 1 1 auto;
 	}
