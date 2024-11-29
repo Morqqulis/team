@@ -21,6 +21,7 @@
 	color: var(--warning);
 	font-weight: 600;
 	font-size: 1.1rem;
+
 	[data-theme='light'] & {
 		color: var(--accent);
 	}
@@ -72,9 +73,4 @@
 	flex-direction: column;
 	gap: 0.3rem;
 	padding: 0.625rem;
-	text-shadow: 0 0 0.5rem var(--warning);
-
-	[data-theme='light'] & {
-		text-shadow: 0 0 0.5rem var(--accent);
-	}
 }
