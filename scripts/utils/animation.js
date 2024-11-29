@@ -1,4 +1,4 @@
-function createRainbowAnimation({ resolution = 20, boxSize = 400, speed = 4 } = {}) {
+function createAnimation({ resolution = 20, boxSize = 400, speed = 4 } = {}) {
 	const container = document.querySelector('.spiral')
 	if (!container) return
 
@@ -20,7 +20,7 @@ function createRainbowAnimation({ resolution = 20, boxSize = 400, speed = 4 } = 
 	}
 }
 
-const clearRainbowAnimation = () => document.querySelectorAll('.block').forEach(block => block.remove())
+const clearAnimation = () => document.querySelectorAll('.block').forEach(block => block.remove())
 
-export { clearRainbowAnimation, createRainbowAnimation }
+export { clearAnimation, createAnimation }
 

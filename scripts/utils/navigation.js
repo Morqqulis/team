@@ -1,4 +1,4 @@
-import { clearRainbowAnimation, createRainbowAnimation } from './animation.js'
+import { clearAnimation, createAnimation } from './animation.js'
 import { dom } from './constants.js'
 
 const loadPage = async url => {
@@ -18,10 +18,10 @@ const loadPage = async url => {
 
 		updateActiveLink()
 
-		clearRainbowAnimation()
+		clearAnimation()
 
 		if (url.includes('code-artist')) {
-			createRainbowAnimation({
+			createAnimation({
 				resolution: 20,
 				boxSize: 600,
 				speed: 4,
