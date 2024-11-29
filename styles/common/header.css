@@ -11,12 +11,22 @@ header {
 	}
 }
 .header__logo {
+	display: flex;
+	align-items: center;
+	gap: 10px;
 	height: 70px;
 }
 .header__logo-img {
 	width: 100%;
 	max-width: 100px;
 	height: auto;
+}
+
+.header__logo-img_2 {
+	max-width: 70px;
+	width: 100%;
+	height: auto;
+	border-radius: 50%;
 }
 
 .header__content {
